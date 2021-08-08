@@ -14,7 +14,7 @@ import org.junit.*;
 @CucumberOptions(
         features = "classpath:features_files",
         glue={"com.cucumber.stepdefinition"},
-        plugin = { "pretty", "html:target/cucumber-reports" },
+        plugin = { "html:target/site/cucumber-pretty", "json:target/cucumber.json" },
         tags = {"@TODOMVCUserToDoListManageCom"}
 )
 
